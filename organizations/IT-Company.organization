@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT-Company" description="">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="admin">
+      <firstName>William</firstName>
+      <lastName>Jobs (CEO - Admin)</lastName>
+      <title>Mr</title>
+      <jobTitle>CEO</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>william.jobs@itcompany.com</email>
+        <phoneNumber></phoneNumber>
+        <faxNumber></faxNumber>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.manager">
+      <firstName>April</firstName>
+      <lastName>Sanchez (HR Manager)</lastName>
+      <title>Mrs</title>
+      <jobTitle>HR Manager</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData>
+        <email>april.sanchez@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.assistant1">
+      <firstName>Helen</firstName>
+      <lastName>Kelly (HR Assistant)</lastName>
+      <title>Mrs</title>
+      <jobTitle>HR Assistant</jobTitle>
+      <manager>User1</manager>
+      <personalData/>
+      <professionalData>
+        <email>helen.kelly@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.assistant2">
+      <firstName>Walter</firstName>
+      <lastName>Bates (HR Assistant)</lastName>
+      <title>Mr</title>
+      <jobTitle>HR Assistant</jobTitle>
+      <manager>hr.manager</manager>
+      <personalData/>
+      <professionalData>
+        <email>walter.bates@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.interviewer1">
+      <firstName>Zachary</firstName>
+      <lastName>Williamson (HR Interviewer)</lastName>
+      <title>Mr</title>
+      <jobTitle>HR Interviewer</jobTitle>
+      <manager>hr.manager</manager>
+      <personalData/>
+      <professionalData>
+        <email>zachary.williamson@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="hr.interviewer2">
+      <firstName>Patrick</firstName>
+      <lastName>Gardenier (HR Interviewer)</lastName>
+      <title>Mr</title>
+      <jobTitle>HR Interviewer</jobTitle>
+      <manager>hr.manager</manager>
+      <personalData/>
+      <professionalData>
+        <email>patrick.gardenier@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="cto">
+      <firstName>Virginie</firstName>
+      <lastName>Jomphe (CTO)</lastName>
+      <title>Mrs</title>
+      <jobTitle>CTO</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData>
+        <email>virginie.jomphe@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="software.engineer1">
+      <firstName>Thorsten</firstName>
+      <lastName>Hartmann (Software Engineer)</lastName>
+      <title>Mr</title>
+      <jobTitle>Software Engineer</jobTitle>
+      <manager>cto</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="software.engineer2">
+      <firstName>Jan</firstName>
+      <lastName>Fisher (Software Engineer)</lastName>
+      <title>Mr</title>
+      <jobTitle>Software Engineer</jobTitle>
+      <manager>cto</manager>
+      <personalData/>
+      <professionalData>
+        <email>jan.fisher@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="software.engineer3">
+      <firstName>Isabel</firstName>
+      <lastName>Bleasdale (Software Engineer)</lastName>
+      <title>Mrs</title>
+      <jobTitle>Software Engineer</jobTitle>
+      <manager>cto</manager>
+      <personalData/>
+      <professionalData>
+        <email>isabel.bleasdale@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="chief.financial.officer">
+      <firstName>Favio</firstName>
+      <lastName>Riviera (CFO)</lastName>
+      <title>Mr</title>
+      <jobTitle>Chief Financial Officer</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData>
+        <email>favio.riviera@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="User1">
+      <firstName>Michael</firstName>
+      <lastName>Morrison (CPO)</lastName>
+      <title>Mr</title>
+      <jobTitle>Chief Procurement Office</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData>
+        <email>michael.morrison@itcompany.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="member">
+      <displayName>Member</displayName>
+      <description></description>
+    </role>
+    <role name="manager">
+      <displayName>Manager</displayName>
+    </role>
+    <role name="junior-software-engineer">
+      <displayName>Junior Software Enginner</displayName>
+    </role>
+    <role name="medior-software-engineer">
+      <displayName>Medior Software Engineer</displayName>
+    </role>
+    <role name="senior-software-engineer">
+      <displayName>Senior Software Engineer</displayName>
+    </role>
+    <role name="job-candidate">
+      <displayName>Job Candidate</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="it-company">
+      <displayName>IT Company</displayName>
+      <description>This group represents the acme department of the ACME organization</description>
+    </group>
+    <group name="hr" parentPath="/it-company">
+      <displayName>Human Resources Department</displayName>
+      <description>This group represents the human resources department of the ACME organization</description>
+    </group>
+    <group name="it-department" parentPath="/it-company">
+      <displayName>IT Department</displayName>
+    </group>
+    <group name="procurement-department" parentPath="/it-company">
+      <displayName>Procurement Department</displayName>
+    </group>
+    <group name="financiall-department" parentPath="/it-company">
+      <displayName>Financial Department</displayName>
+    </group>
+    <group name="admin" parentPath="/it-company">
+      <displayName>Admin</displayName>
+    </group>
+    <group name="job-candidates" parentPath="/it-company">
+      <displayName>Job Candidates</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>admin</userName>
+      <roleName>member</roleName>
+      <groupName>admin</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.manager</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>hr.manager</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.assistant1</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>hr.assistant1</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.assistant2</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>hr.assistant2</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.interviewer1</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>hr.interviewer1</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hr.interviewer2</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>hr.interviewer2</userName>
+      <roleName>member</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>cto</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>cto</userName>
+      <roleName>member</roleName>
+      <groupName>it-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>software.engineer1</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>software.engineer2</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>software.engineer2</userName>
+      <roleName>member</roleName>
+      <groupName>it-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>software.engineer1</userName>
+      <roleName>member</roleName>
+      <groupName>it-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>software.engineer3</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>software.engineer3</userName>
+      <roleName>member</roleName>
+      <groupName>it-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>chief.financial.officer</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>chief.financial.officer</userName>
+      <roleName>member</roleName>
+      <groupName>financiall-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>User1</userName>
+      <roleName>member</roleName>
+      <groupName>it-company</groupName>
+    </membership>
+    <membership>
+      <userName>User1</userName>
+      <roleName>member</roleName>
+      <groupName>procurement-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
