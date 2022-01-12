@@ -214,18 +214,8 @@
     <membership>
       <userName>hr.manager</userName>
       <roleName>member</roleName>
-      <groupName>it-company</groupName>
-    </membership>
-    <membership>
-      <userName>hr.manager</userName>
-      <roleName>member</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>hr.assistant1</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
     </membership>
     <membership>
       <userName>hr.assistant1</userName>
@@ -236,18 +226,8 @@
     <membership>
       <userName>hr.assistant2</userName>
       <roleName>member</roleName>
-      <groupName>it-company</groupName>
-    </membership>
-    <membership>
-      <userName>hr.assistant2</userName>
-      <roleName>member</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>hr.interviewer1</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
     </membership>
     <membership>
       <userName>hr.interviewer1</userName>
@@ -258,34 +238,14 @@
     <membership>
       <userName>hr.interviewer2</userName>
       <roleName>member</roleName>
-      <groupName>it-company</groupName>
-    </membership>
-    <membership>
-      <userName>hr.interviewer2</userName>
-      <roleName>member</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>cto</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
     </membership>
     <membership>
       <userName>cto</userName>
       <roleName>member</roleName>
       <groupName>it-department</groupName>
       <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>software.engineer1</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
-    </membership>
-    <membership>
-      <userName>software.engineer2</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
     </membership>
     <membership>
       <userName>software.engineer2</userName>
@@ -302,29 +262,14 @@
     <membership>
       <userName>software.engineer3</userName>
       <roleName>member</roleName>
-      <groupName>it-company</groupName>
-    </membership>
-    <membership>
-      <userName>software.engineer3</userName>
-      <roleName>member</roleName>
       <groupName>it-department</groupName>
       <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>chief.financial.officer</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
     </membership>
     <membership>
       <userName>chief.financial.officer</userName>
       <roleName>member</roleName>
       <groupName>financiall-department</groupName>
       <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>User1</userName>
-      <roleName>member</roleName>
-      <groupName>it-company</groupName>
     </membership>
     <membership>
       <userName>User1</userName>
