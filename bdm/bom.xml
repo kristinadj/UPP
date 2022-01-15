@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
     <businessObjects>
-        <businessObject qualifiedName="itcomany.ftn.model.EducationLevel">
+        <businessObject qualifiedName="itcompany.ftn.model.EducationLevel">
             <fields>
                 <field type="STRING" length="255" name="educationLevelName" nullable="true" collection="false"/>
             </fields>
@@ -9,15 +9,32 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="itcomany.ftn.model.JobApplication">
+        <businessObject qualifiedName="itcompany.ftn.model.ForeignLangugage">
+            <fields>
+                <field type="STRING" length="255" name="languageName" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcompany.ftn.model.Job">
+            <fields>
+                <field type="STRING" length="255" name="jobTitle" nullable="false" collection="false"/>
+                <field type="TEXT" length="255" name="jobDescription" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcompany.ftn.model.ForeignLangugage" fetchType="EAGER" name="languages" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcompany.ftn.model.JobApplication">
             <fields>
                 <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="lastName" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="address" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="itcomany.ftn.model.EducationLevel" fetchType="EAGER" name="educationLevel" nullable="false" collection="false"/>
-                <field type="TEXT" length="255" name="cv" nullable="false" collection="false"/>
-                <field type="TEXT" length="255" name="coverLetter" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcompany.ftn.model.EducationLevel" fetchType="EAGER" name="educationLevel" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcompany.ftn.model.Job" fetchType="LAZY" name="job" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
