@@ -212,12 +212,6 @@
     <group name="job-candidates" parentPath="/it-company">
       <displayName>Job Candidates</displayName>
     </group>
-    <group name="assistants" parentPath="/it-company/hr-department">
-      <displayName>Assistants</displayName>
-    </group>
-    <group name="interviewers" parentPath="/it-company/hr-department">
-      <displayName>Interviewers</displayName>
-    </group>
   </groups>
   <memberships>
     <membership>
@@ -235,26 +229,26 @@
     <membership>
       <userName>hr.assistant1</userName>
       <roleName>member</roleName>
-      <groupName>assistants</groupName>
-      <groupParentPath>/it-company/hr-department</groupParentPath>
+      <groupName>hr-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
     </membership>
     <membership>
       <userName>hr.assistant2</userName>
       <roleName>member</roleName>
-      <groupName>assistants</groupName>
-      <groupParentPath>/it-company/hr-department</groupParentPath>
+      <groupName>hr-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
     </membership>
     <membership>
       <userName>hr.interviewer1</userName>
       <roleName>member</roleName>
-      <groupName>interviewers</groupName>
-      <groupParentPath>/it-company/hr-department</groupParentPath>
+      <groupName>hr-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
     </membership>
     <membership>
       <userName>hr.interviewer2</userName>
       <roleName>member</roleName>
-      <groupName>interviewers</groupName>
-      <groupParentPath>/it-company/hr-department</groupParentPath>
+      <groupName>hr-department</groupName>
+      <groupParentPath>/it-company</groupParentPath>
     </membership>
     <membership>
       <userName>cto</userName>
