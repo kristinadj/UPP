@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "selectInterviewersForm",
   "name" : "selectInterviewersForm",
-  "lastUpdate" : 1642525619737,
+  "lastUpdate" : 1642536222862,
   "rows" : [
     [
       {
@@ -248,7 +248,8 @@
                           "value" : "hrAssistants"
                         },
                         "displayedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "userName"
                         },
                         "returnedKey" : {
                           "type" : "constant",
@@ -314,7 +315,8 @@
                           "value" : "seniorEngineers"
                         },
                         "displayedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : "userName"
                         },
                         "returnedKey" : {
                           "type" : "constant",
