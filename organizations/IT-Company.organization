@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT-Company">
-  <customUserInfoDefinitions/>
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>Langugage</name>
+      <description></description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
   <users>
     <user userName="admin">
       <firstName>William</firstName>
@@ -14,7 +19,12 @@
         <faxNumber></faxNumber>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="hr.manager">
       <firstName>April</firstName>
@@ -27,7 +37,12 @@
         <email>april.sanchez@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="hr.assistant1">
       <firstName>Helen</firstName>
@@ -40,7 +55,12 @@
         <email>helen.kelly@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="hr.assistant2">
       <firstName>Walter</firstName>
@@ -53,33 +73,30 @@
         <email>walter.bates@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value>English</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
-    <user userName="hr.interviewer1">
-      <firstName>Zachary</firstName>
-      <lastName>Williamson (HR Interviewer)</lastName>
-      <title>Mr</title>
-      <jobTitle>HR Interviewer</jobTitle>
-      <manager>hr.manager</manager>
-      <personalData/>
-      <professionalData>
-        <email>zachary.williamson@itcompany.com</email>
-      </professionalData>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="hr.interviewer2">
+    <user userName="hr.assistant3">
       <firstName>Patrick</firstName>
-      <lastName>Gardenier (HR Interviewer)</lastName>
+      <lastName>Gardenier (HR Assistant)</lastName>
       <title>Mr</title>
-      <jobTitle>HR Interviewer</jobTitle>
+      <jobTitle>HR Assistant</jobTitle>
       <manager>hr.manager</manager>
       <personalData/>
       <professionalData>
         <email>patrick.gardenier@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="cto">
       <firstName>Virginie</firstName>
@@ -92,7 +109,12 @@
         <email>virginie.jomphe@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="software.engineer1">
       <firstName>Thorsten</firstName>
@@ -103,7 +125,12 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="software.engineer2">
       <firstName>Jan</firstName>
@@ -116,7 +143,12 @@
         <email>jan.fisher@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="software.engineer3">
       <firstName>Isabel</firstName>
@@ -129,7 +161,12 @@
         <email>isabel.bleasdale@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="chief.financial.officer">
       <firstName>Favio</firstName>
@@ -142,7 +179,12 @@
         <email>favio.riviera@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="cpo">
       <firstName>Michael</firstName>
@@ -155,7 +197,12 @@
         <email>michael.morrison@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="job.candidate1">
       <firstName>Draco</firstName>
@@ -167,7 +214,12 @@
         <email>draco.granger@itcompany.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
   </users>
   <roles>
@@ -195,7 +247,7 @@
     </group>
     <group name="hr-department" parentPath="/it-company">
       <displayName>Human Resources Department</displayName>
-      <description>This group represents the human resources department of the ACME organization</description>
+      <description></description>
     </group>
     <group name="it-department" parentPath="/it-company">
       <displayName>IT Department</displayName>
@@ -239,13 +291,7 @@
       <groupParentPath>/it-company</groupParentPath>
     </membership>
     <membership>
-      <userName>hr.interviewer1</userName>
-      <roleName>member</roleName>
-      <groupName>hr-department</groupName>
-      <groupParentPath>/it-company</groupParentPath>
-    </membership>
-    <membership>
-      <userName>hr.interviewer2</userName>
+      <userName>hr.assistant3</userName>
       <roleName>member</roleName>
       <groupName>hr-department</groupName>
       <groupParentPath>/it-company</groupParentPath>
