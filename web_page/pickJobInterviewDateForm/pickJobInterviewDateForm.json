@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "pickJobInterviewDateForm",
   "name" : "pickJobInterviewDateForm",
-  "lastUpdate" : 1642530427243,
+  "lastUpdate" : 1642537187738,
   "rows" : [
     [
       {
@@ -462,7 +462,7 @@
     "potentialDates" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/potentialInterviewDates"
+        "../API/bpm/activityVariable/{{taskId}}/potentialInterviewDatesLocal"
       ],
       "advancedOptions" : { },
       "exposed" : false
