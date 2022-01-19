@@ -4,6 +4,11 @@
         <businessObject qualifiedName="itcompany.ftn.model.EducationLevel">
             <fields>
                 <field type="STRING" length="255" name="educationLevelName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="firstName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="destination" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="numberOfDays" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="offline" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -35,6 +40,64 @@
                 <field type="STRING" length="255" name="address" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="itcompany.ftn.model.EducationLevel" fetchType="EAGER" name="educationLevel" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="itcompany.ftn.model.Job" fetchType="LAZY" name="job" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcomany.ftn.model.trenning.AccommodationOption">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcomany.ftn.model.trenning.TypeOfAccommodation" fetchType="LAZY" name="type" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="price" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcomany.ftn.model.trenning.TrainingRequirements">
+            <fields>
+                <field type="STRING" length="255" name="firstName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lastName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="destination" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="oniline" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcomany.ftn.model.trenning.TraningOffer">
+            <fields>
+                <field type="STRING" length="255" name="descritpion" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcomany.ftn.model.trenning.AccommodationOption" fetchType="LAZY" name="accommodationOption" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcomany.ftn.model.trenning.TransportationOption" fetchType="LAZY" name="transportationOption" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcomany.ftn.model.trenning.TransportationOption">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="itcomany.ftn.model.trenning.TypeOfTransport" fetchType="LAZY" name="type" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="price" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="description" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcomany.ftn.model.trenning.TypeOfAccommodation">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="itcomany.ftn.model.trenning.TypeOfTransport">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
