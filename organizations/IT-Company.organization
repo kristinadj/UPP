@@ -222,6 +222,17 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="guest">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>Langugage</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -264,6 +275,9 @@
     </group>
     <group name="job-candidates" parentPath="/it-company">
       <displayName>Job Candidates</displayName>
+    </group>
+    <group name="guests" parentPath="/it-company">
+      <displayName>Guests</displayName>
     </group>
   </groups>
   <memberships>
@@ -337,6 +351,12 @@
       <userName>job.candidate1</userName>
       <roleName>member</roleName>
       <groupName>job-candidates</groupName>
+      <groupParentPath>/it-company</groupParentPath>
+    </membership>
+    <membership>
+      <userName>guest</userName>
+      <roleName>member</roleName>
+      <groupName>guests</groupName>
       <groupParentPath>/it-company</groupParentPath>
     </membership>
   </memberships>

@@ -1093,7 +1093,7 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_H68MUHiCEeykhOfiZa5Sgg" name="date" type="LOCALDATETIME">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_H68MUXiCEeykhOfiZa5Sgg"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_Q0_z4HibEeykhOfiZa5Sgg" expression="import java.time.LocalDateTime&#xD;&#xA;return LocalDateTime.now().isBefore(date)" name="dateBeforeNow">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Q0_z4HibEeykhOfiZa5Sgg" expression="import java.time.LocalDateTime&#xD;&#xA;return LocalDateTime.now().isBefore(date)" errorMessage="Date must be in the future" name="dateBeforeNow">
               <inputNames>date</inputNames>
             </constraints>
           </contract>
@@ -1152,7 +1152,7 @@
                 <mapping xmi:type="process:ContractInputMapping" xmi:id="_d0odoXicEeykhOfiZa5Sgg"/>
               </inputs>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_5E5w4HicEeykhOfiZa5Sgg" expression="return interviewFeedbackInput.professionalRating >= 1 &amp;&amp; interviewFeedbackInput.professionalRating &lt;= 5;" name="ratingConstraint">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_5E5w4HicEeykhOfiZa5Sgg" expression="return interviewFeedbackInput.professionalRating >= 1 &amp;&amp; interviewFeedbackInput.professionalRating &lt;= 5;" errorMessage="Rating range is between 1 and 5" name="ratingConstraint">
               <inputNames>interviewFeedbackInput</inputNames>
             </constraints>
           </contract>
