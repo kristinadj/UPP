@@ -80,13 +80,35 @@
               <inputTypes>itcompany.ftn.model.Job</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_eI3PcHnUEeyZn9kxIOTszw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eI3PcXnUEeyZn9kxIOTszw" name="cvFile" content="cvFile" type="DOCUMENT_REF_TYPE">
+              <referencedElements xmi:type="process:Document" xmi:id="_eqsKIHnUEeyZn9kxIOTszw" name="cvFile"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eI3PcnnUEeyZn9kxIOTszw" name="cvFileInput" content="cvFileInput" type="TYPE_CONTRACT_INPUT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_fWA_EHnUEeyZn9kxIOTszw" name="cvFileInput" type="FILE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_fWA_EXnUEeyZn9kxIOTszw"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_eI3Pc3nUEeyZn9kxIOTszw" type="DOCUMENT_CREATE_UPDATE"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fwhJwHnUEeyZn9kxIOTszw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fwhJwXnUEeyZn9kxIOTszw" name="coverLetterFile" content="coverLetterFile" type="DOCUMENT_REF_TYPE">
+              <referencedElements xmi:type="process:Document" xmi:id="_gPSwcHnUEeyZn9kxIOTszw" name="coverLetterFile"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fwhJwnnUEeyZn9kxIOTszw" name="coverLetterFileInput" content="coverLetterFileInput" type="TYPE_CONTRACT_INPUT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_g7yqEHnUEeyZn9kxIOTszw" name="coverLetterFileInput" type="FILE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_g7yqEXnUEeyZn9kxIOTszw"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fwhJw3nUEeyZn9kxIOTszw" type="DOCUMENT_CREATE_UPDATE"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_vZuOm3Y3EeyqSr1neHjgmw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_vZuOnHY3EeyqSr1neHjgmw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_vZuOnXY3EeyqSr1neHjgmw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_vZuOnnY3EeyqSr1neHjgmw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_vZuOn3Y3EeyqSr1neHjgmw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_vZuOoHY3EeyqSr1neHjgmw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_DPh7YHY4EeyqSr1neHjgmw" name="jobApplicationInputForm" content="e5127d6e-7d02-43b8-a9bf-4282798aeb8c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_jx24QHnUEeyZn9kxIOTszw" name="jobApplicationInputForm" content="97f7a8a1-6622-41a5-a0df-793872fa3008" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_rK_-UHeKEey5FKuQkSLuxg" name="Initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_rK_-UXeKEey5FKuQkSLuxg" definitionId="bonita-actorfilter-initiator" version="1.0">
@@ -107,6 +129,12 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_Pvmwx3Y4EeyqSr1neHjgmw" name="job" type="COMPLEX" createMode="false">
                 <inputs xmi:type="process:ContractInput" xmi:id="_PvmwyHY4EeyqSr1neHjgmw" name="persistenceId_string" createMode="false"/>
               </inputs>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_2ccGUHlLEey4WNwLO-WGtQ" name="cvFileInput" type="FILE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_2ccGUXlLEey4WNwLO-WGtQ"/>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_39dNIHlLEey4WNwLO-WGtQ" name="coverLetterFileInput" type="FILE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_39dNIXlLEey4WNwLO-WGtQ"/>
             </inputs>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_PvmwyXY4EeyqSr1neHjgmw" expression="jobApplicationInput?.name != null" errorMessage="name is mandatory for JobApplication" name="mandatory_jobApplicationInput_name">
               <inputNames>jobApplicationInput</inputNames>
@@ -139,9 +167,9 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_xBU2oXiJEeykhOfiZa5Sgg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xBU2oHiJEeykhOfiZa5Sgg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xBU2oniJEeykhOfiZa5Sgg" name="" content="" returnTypeFixed="true"/>
-          <data xmi:type="process:JavaObjectData" xmi:id="_9VlYYHibEeykhOfiZa5Sgg" name="potentialInterviewDatesLocal" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List">
-            <defaultValue xmi:type="expression:Expression" xmi:id="_9Vl_cHibEeykhOfiZa5Sgg" name="init_potentialInterviewDatesLocal()" content="potentialInterviewDates" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_9Vl_cXibEeykhOfiZa5Sgg" name="potentialInterviewDates" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List"/>
+          <data xmi:type="process:JavaObjectData" xmi:id="_BnH7AHnZEeyZn9kxIOTszw" name="potentialInterviewDatesLocalVar" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_BnIiEHnZEeyZn9kxIOTszw" name="init_potentialInterviewDatesLocalVar()" content="potentialInterviewDates" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_BnIiEXnZEeyZn9kxIOTszw" name="potentialInterviewDates" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List"/>
             </defaultValue>
           </data>
           <operations xmi:type="expression:Operation" xmi:id="_QI0VQHiZEeykhOfiZa5Sgg">
@@ -341,7 +369,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_e3nvYHZREeyqSr1neHjgmw" name="5 Days 00:00:00" content="432000000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_iO5SZ3Y_EeyqSr1neHjgmw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_E04f4HZJEeyqSr1neHjgmw" name="jobApplicationAnalysis" content="f181ad8b-54f9-4303-8d85-9fd063e9aca8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_VYZC4HnVEeyZn9kxIOTszw" name="jobApplicationAnalysis" content="618e5f0c-0c9d-42ca-8cef-cedb8b2ff2c3" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_YtDsIHa1EeyV2_K5cmNhzA" name="First HR Assistant" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_YtDsIXa1EeyV2_K5cmNhzA" definitionId="bonita-actorfilter-single-user" version="1.0.0">
@@ -359,6 +387,8 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_B_cj0HZJEeyqSr1neHjgmw" name="jobApplicationInput" type="COMPLEX" dataReference="jobApplication" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_B_cj0XZJEeyqSr1neHjgmw" name="name" createMode="false"/>
             </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_RCkSIHnVEeyZn9kxIOTszw" name="cvFileDocumentInput" type="FILE" dataReference="cvFile" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Sgqn0HnVEeyZn9kxIOTszw" name="coverLetterFileDocumentInput" type="FILE" dataReference="coverLetterFile" createMode="false"/>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_B_cj0nZJEeyqSr1neHjgmw" expression="jobApplicationInput?.name != null" errorMessage="name is mandatory for JobApplication" name="mandatory_jobApplicationInput_name">
               <inputNames>jobApplicationInput</inputNames>
             </constraints>
@@ -492,7 +522,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_d31ikHbvEeyi6eIt0jFw5g" name="1 Days 00:00:00" content="86400000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_FzG-RXbvEeyi6eIt0jFw5g">
-            <targetForm xmi:type="expression:Expression" xmi:id="_FzG-RnbvEeyi6eIt0jFw5g" name="jobApplicationAnalysis" content="f181ad8b-54f9-4303-8d85-9fd063e9aca8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_FzG-RnbvEeyi6eIt0jFw5g" name="jobApplicationAnalysis" content="618e5f0c-0c9d-42ca-8cef-cedb8b2ff2c3" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_Xq77cHbvEeyi6eIt0jFw5g" name="First HR Assistant" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Xq77cXbvEeyi6eIt0jFw5g" definitionId="bonita-actorfilter-single-user" version="1.0.0">
@@ -519,6 +549,8 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_jnmhwHbvEeyi6eIt0jFw5g" name="isJobApplicationApprovedInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_jnmhwXbvEeyi6eIt0jFw5g"/>
             </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_GwrWIHnWEeyZn9kxIOTszw" name="cvFileDocumentInput" type="FILE" dataReference="cvFile" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_H7IXEHnWEeyZn9kxIOTszw" name="coverLetterFileDocumentInput" type="FILE" dataReference="coverLetterFile" createMode="false"/>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_iqq_cHbvEeyi6eIt0jFw5g" expression="jobApplicationInput?.name != null" errorMessage="name is mandatory for JobApplication" name="mandatory_jobApplicationInput_name">
               <inputNames>jobApplicationInput</inputNames>
             </constraints>
@@ -604,7 +636,7 @@
             <condition xmi:type="expression:Expression" xmi:id="_RwmG4HeSEey5FKuQkSLuxg" name="1 Days 00:00:00" content="86400000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_RF3vJnbzEeyi6eIt0jFw5g">
-            <targetForm xmi:type="expression:Expression" xmi:id="_yggkkHeQEey5FKuQkSLuxg" name="jobApplicationAnalysis" content="f181ad8b-54f9-4303-8d85-9fd063e9aca8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_yggkkHeQEey5FKuQkSLuxg" name="jobApplicationAnalysis" content="618e5f0c-0c9d-42ca-8cef-cedb8b2ff2c3" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_0XJykHePEey5FKuQkSLuxg" name="Second HR Assistant" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_0XJykXePEey5FKuQkSLuxg" definitionId="bonita-actorfilter-single-user" version="1.0.0">
@@ -632,6 +664,8 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_ta0AoHeREey5FKuQkSLuxg" name="isJobApplicationApprovedInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_ta0AoXeREey5FKuQkSLuxg"/>
             </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Zd9UoHnWEeyZn9kxIOTszw" name="cvFileDocumentInput" type="FILE" dataReference="cvFile" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_adAW0HnWEeyZn9kxIOTszw" name="coverLetterFileDocumentInput" type="FILE" dataReference="coverLetterFile" createMode="false"/>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_tTDLyHeREey5FKuQkSLuxg" expression="jobApplicationInput?.name != null" errorMessage="name is mandatory for JobApplication" name="mandatory_jobApplicationInput_name">
               <inputNames>jobApplicationInput</inputNames>
             </constraints>
@@ -711,8 +745,17 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_5ddY13ZBEeyqSr1neHjgmw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_5ddY1nZBEeyqSr1neHjgmw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_DFqFU3ZGEeyqSr1neHjgmw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_DFqFVHZGEeyqSr1neHjgmw" name="jobApplicationAnalysis" content="f181ad8b-54f9-4303-8d85-9fd063e9aca8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_DFqFVHZGEeyqSr1neHjgmw" name="jobApplicationAnalysis" content="618e5f0c-0c9d-42ca-8cef-cedb8b2ff2c3" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_eVTEwHnbEeyZn9kxIOTszw" name="HR Manager id" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_eVTEwXnbEeyZn9kxIOTszw" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_eVTEwnnbEeyZn9kxIOTszw" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_eVTEw3nbEeyZn9kxIOTszw" name="userId()" content="hrManagerId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_Hmrs4HndEeyZn9kxIOTszw" name="hrManagerId" dataType="_vZuOv3Y3EeyqSr1neHjgmw"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_DFqFUnZGEeyqSr1neHjgmw">
             <inputs xmi:type="process:ContractInput" xmi:id="_btLQ0HZKEeyqSr1neHjgmw" name="jobApplicationInput" type="COMPLEX" dataReference="jobApplication" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_btL34HZKEeyqSr1neHjgmw" name="name" createMode="false"/>
@@ -720,6 +763,8 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_cXCtMHZKEeyqSr1neHjgmw" name="isJobApplicationApprovedInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_cXCtMXZKEeyqSr1neHjgmw"/>
             </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_ML_IQHnWEeyZn9kxIOTszw" name="cvFileDocumentInput" type="FILE" dataReference="cvFile" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_NSfdUHnWEeyZn9kxIOTszw" name="coverLetterFileDocumentInput" type="FILE" dataReference="coverLetterFile" createMode="false"/>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_btL34XZKEeyqSr1neHjgmw" expression="jobApplicationInput?.name != null" errorMessage="name is mandatory for JobApplication" name="mandatory_jobApplicationInput_name">
               <inputNames>jobApplicationInput</inputNames>
             </constraints>
@@ -769,6 +814,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_CkkKeXZGEeyqSr1neHjgmw">
             <targetForm xmi:type="expression:Expression" xmi:id="_OHzpIHiAEeykhOfiZa5Sgg" name="selectInterviewersForm" content="605ae15c-98e2-44c5-914f-2f18aa6a6b77" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_2mDS4HnbEeyZn9kxIOTszw" name="HR Manager id" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_2mD58HnbEeyZn9kxIOTszw" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_2mD58XnbEeyZn9kxIOTszw" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_2mD58nnbEeyZn9kxIOTszw" name="userId()" content="hrManagerId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_FUDi8HndEeyZn9kxIOTszw" name="hrManagerId" dataType="_vZuOv3Y3EeyqSr1neHjgmw"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_CkkKeHZGEeyqSr1neHjgmw">
             <inputs xmi:type="process:ContractInput" xmi:id="_63kxoHeaEey5FKuQkSLuxg" name="selectedInterviewers" type="COMPLEX">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_63kxoXeaEey5FKuQkSLuxg"/>
@@ -818,6 +872,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_DTg0mHiKEeykhOfiZa5Sgg">
             <targetForm xmi:type="expression:Expression" xmi:id="_vOld8HiaEeykhOfiZa5Sgg" name="hireJobCandidateForm" content="4c47f039-e661-4a35-98b7-e5348225f5af" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_7JFZMHnbEeyZn9kxIOTszw" name="HR Manager id" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_7JFZMXnbEeyZn9kxIOTszw" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_7JFZMnnbEeyZn9kxIOTszw" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_7JFZM3nbEeyZn9kxIOTszw" name="userId()" content="hrManagerId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_CcCM8HndEeyZn9kxIOTszw" name="hrManagerId" dataType="_vZuOv3Y3EeyqSr1neHjgmw"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_DTg0l3iKEeykhOfiZa5Sgg">
             <inputs xmi:type="process:ContractInput" xmi:id="_msN0QHiaEeykhOfiZa5Sgg" name="isJobCandidateHiredInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_msN0QXiaEeykhOfiZa5Sgg"/>
@@ -1058,8 +1121,8 @@
           <loopMaximum xmi:type="expression:Expression" xmi:id="_550hVHiJEeykhOfiZa5Sgg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_550hVXiJEeykhOfiZa5Sgg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_550hV3iJEeykhOfiZa5Sgg" name="interviewerId" content="interviewerId" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Long" returnTypeFixed="true"/>
-          <completionCondition xmi:type="expression:Expression" xmi:id="_550hVniJEeykhOfiZa5Sgg" name="earlyCompletionCondition()" content="def lowestRatingCount = 0;&#xD;&#xA;def notRecommendingCount = 0;&#xD;&#xA;&#xD;&#xA;for (feedback in interviewFeedbacks) {&#xD;&#xA;&#x9;if (feedback[&quot;professionalRating&quot;] == 1) {&#xD;&#xA;&#x9;&#x9;lowestRatingCount = lowestRatingCount + 1&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;if (!feedback[&quot;recommendation&quot;]) {&#xD;&#xA;&#x9;&#x9;notRecommendingCount = notRecommendingCount + 1&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return lowestRatingCount >= 1  || notRecommendingCount >= 2" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-            <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-C8iwHidEeykhOfiZa5Sgg" name="interviewFeedbacks" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List"/>
+          <completionCondition xmi:type="expression:Expression" xmi:id="_550hVniJEeykhOfiZa5Sgg" name="earlyCompletionCondition()" content="def lowestRatingCount = 0;&#xD;&#xA;def notRecommendingCount = 0;&#xD;&#xA;&#xD;&#xA;for (feedback in interviewFeedbacks) {&#xD;&#xA;&#x9;if (feedback  != null) {&#xD;&#xA;&#x9;&#x9;if (feedback[&quot;professionalRating&quot;]  ==  1) {&#xD;&#xA;&#x9;&#x9;&#x9;lowestRatingCount = lowestRatingCount + 1&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;if (!feedback[&quot;recommendation&quot;]) {&#xD;&#xA;&#x9;&#x9;&#x9;notRecommendingCount = notRecommendingCount + 1&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return lowestRatingCount >= 1  || notRecommendingCount >= 2" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+            <referencedElements xmi:type="process:JavaObjectData" xmi:id="_Yv1tkHnaEeyZn9kxIOTszw" name="interviewFeedbacks" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List"/>
           </completionCondition>
           <formMapping xmi:type="process:FormMapping" xmi:id="_8IFvuXiJEeykhOfiZa5Sgg">
             <targetForm xmi:type="expression:Expression" xmi:id="_k-pNQHicEeykhOfiZa5Sgg" name="interviewFeedbackForm" content="3f218257-e6b8-4f77-acd1-ad1a11eb5c91" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1182,7 +1245,10 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_IfZSgHY4EeyqSr1neHjgmw" name="jobApplication" dataType="_vZuOxHY3EeyqSr1neHjgmw" className="itcompany.ftn.model.JobApplication">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_Th8XeHeMEey5FKuQkSLuxg" name="" content="" interpreter="GROOVY"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_oBKsD3j9EeyUqseyR7ypbg" name="init_jobApplication()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xD;&#xA;import itcompany.ftn.model.JobApplication&#xD;&#xA;&#xD;&#xA;def jobApplication = new JobApplication()&#xD;&#xA;&#xD;&#xA;try{&#xD;&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xD;&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xD;&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xD;&#xA;&#x9;def processInitiatorContactData = apiAccessor.getIdentityAPI().getUserContactData(processInitiator.id, false)&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;jobApplication.name = processInitiator.firstName&#xD;&#xA;&#x9;jobApplication.lastName = processInitiator.lastName&#xD;&#xA;&#x9;jobApplication.address = processInitiatorContactData.address&#xD;&#xA;&#x9;jobApplication.email = processInitiatorContactData.email&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;}catch(UserNotFoundException e){&#xD;&#xA;&#x9;// Handle UserNotFoundException here&#xD;&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xD;&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xD;&#xA;}&#xD;&#xA;return jobApplication&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="itcompany.ftn.model.JobApplication">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_n7wrIHlLEey4WNwLO-WGtQ" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_n7xSMHlLEey4WNwLO-WGtQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
       </data>
       <data xmi:type="process:Data" xmi:id="_rioSIHZAEeyqSr1neHjgmw" name="isJobApplicationApproved" dataType="_vZuOvHY3EeyqSr1neHjgmw">
         <defaultValue xmi:type="expression:Expression" xmi:id="_rioSIXZAEeyqSr1neHjgmw" name="false" content="false" returnType="java.lang.Boolean"/>
@@ -1211,8 +1277,13 @@
       <data xmi:type="process:JavaObjectData" xmi:id="_cjP40HidEeykhOfiZa5Sgg" name="interviewFeedbacks" dataType="_vZuOwnY3EeyqSr1neHjgmw" className="java.util.List">
         <defaultValue xmi:type="expression:Expression" xmi:id="_cjP40XidEeykhOfiZa5Sgg" content="" returnType="java.util.List"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_vZuOpHY3EeyqSr1neHjgmw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_rl3VsniYEeykhOfiZa5Sgg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <data xmi:type="process:Data" xmi:id="_pPdsQHnbEeyZn9kxIOTszw" name="hrManagerId" dataType="_vZuOv3Y3EeyqSr1neHjgmw">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_pPdsQXnbEeyZn9kxIOTszw" name="init_hrManagerId()" content="apiAccessor.getIdentityAPI().getUserByUserName(&quot;hr.manager&quot;).id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+          <referencedElements xmi:type="expression:Expression" xmi:id="__s_z0HncEeyZn9kxIOTszw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
+      </data>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_vZuOpHY3EeyqSr1neHjgmw" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_ybuRQHj7EeyUqseyR7ypbg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_vZuOpnY3EeyqSr1neHjgmw" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_vZuOp3Y3EeyqSr1neHjgmw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1371,6 +1442,16 @@
       <actors xmi:type="process:Actor" xmi:id="_tWwEMHeKEey5FKuQkSLuxg" name="HR Manager"/>
       <actors xmi:type="process:Actor" xmi:id="_xx-xIHiBEeykhOfiZa5Sgg" name="Interviewer"/>
       <contract xmi:type="process:Contract" xmi:id="_vZuOrHY3EeyqSr1neHjgmw"/>
+      <documents xmi:type="process:Document" xmi:id="_TzITgHlMEey4WNwLO-WGtQ" name="cvFile">
+        <mimeType xmi:type="expression:Expression" xmi:id="_TzI6kHlMEey4WNwLO-WGtQ" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_TzI6kXlMEey4WNwLO-WGtQ" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_TzI6knlMEey4WNwLO-WGtQ" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
+      <documents xmi:type="process:Document" xmi:id="_VADZoHlMEey4WNwLO-WGtQ" name="coverLetterFile">
+        <mimeType xmi:type="expression:Expression" xmi:id="_VADZoXlMEey4WNwLO-WGtQ" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_VADZonlMEey4WNwLO-WGtQ" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_VADZo3lMEey4WNwLO-WGtQ" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_vZuOrXY3EeyqSr1neHjgmw">
         <name xmi:type="expression:Expression" xmi:id="_vZuOrnY3EeyqSr1neHjgmw" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_vZuOr3Y3EeyqSr1neHjgmw" content="" returnTypeFixed="true"/>
@@ -1664,7 +1745,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_wWuswXZgEeyqSr1neHjgmw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_wWuFsXZgEeyqSr1neHjgmw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wWuFsnZgEeyqSr1neHjgmw" points="[-78, 48, 94, -97]$[-78, 107, 94, -38]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wWuFsnZgEeyqSr1neHjgmw" points="[-50, 48, 110, -106]$[-50, 82, 110, -72]$[-46, 82, 114, -72]$[-46, 116, 114, -38]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wWwh8HZgEeyqSr1neHjgmw" id="(1.0,0.37662337662337664)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wWwh8XZgEeyqSr1neHjgmw" id="(0.045714285714285714,0.4367816091954023)"/>
     </edges>

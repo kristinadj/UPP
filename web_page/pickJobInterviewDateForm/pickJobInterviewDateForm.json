@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "pickJobInterviewDateForm",
   "name" : "pickJobInterviewDateForm",
-  "lastUpdate" : 1642537187738,
+  "lastUpdate" : 1642673392415,
   "rows" : [
     [
       {
@@ -209,7 +209,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : true
+                    "value" : false
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -232,14 +232,18 @@
                     "value" : false
                   },
                   "availableValues" : {
-                    "type" : "expression",
-                    "value" : "potentialDates"
+                    "type" : "constant",
+                    "value" : [
+                      "potentialDates.value"
+                    ]
                   },
                   "displayedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : ""
                   },
                   "returnedKey" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : ""
                   },
                   "selectedValue" : {
                     "type" : "variable",
@@ -462,7 +466,7 @@
     "potentialDates" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/potentialInterviewDatesLocal"
+        "../API/bpm/activityVariable/{{taskId}}/potentialInterviewDatesLocalVar"
       ],
       "advancedOptions" : { },
       "exposed" : false

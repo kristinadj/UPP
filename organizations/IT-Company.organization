@@ -211,7 +211,8 @@
       <jobTitle></jobTitle>
       <personalData/>
       <professionalData>
-        <email>draco.granger@itcompany.com</email>
+        <email>draco.granger@gmail.com</email>
+        <address>51 Federal Suite, 13</address>
       </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
