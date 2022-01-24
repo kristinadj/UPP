@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "selectInterviewersForm",
   "name" : "selectInterviewersForm",
-  "lastUpdate" : 1642536222862,
+  "lastUpdate" : 1643023916124,
   "rows" : [
     [
       {
@@ -10,100 +10,25 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
         "reference" : "ff363da1-8e03-43d1-99af-f7f1057fdff0",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "14e72822-a37c-4e52-9de5-5ecef9211719",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "cfe1fde6-3320-46a2-a230-f52db3b4f7cb",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
+          [ ]
         ]
       }
     ],
@@ -113,7 +38,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "50eabbe9-5206-4172-a5ac-c49aa954b32e",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -245,11 +179,11 @@
                         },
                         "availableValues" : {
                           "type" : "expression",
-                          "value" : "hrAssistants"
+                          "value" : "hrAssistantsList.value"
                         },
                         "displayedKey" : {
                           "type" : "constant",
-                          "value" : "userName"
+                          "value" : "displayKey"
                         },
                         "returnedKey" : {
                           "type" : "constant",
@@ -312,11 +246,11 @@
                         },
                         "availableValues" : {
                           "type" : "expression",
-                          "value" : "seniorEngineers"
+                          "value" : "seniorEngineers.value"
                         },
                         "displayedKey" : {
                           "type" : "constant",
-                          "value" : "userName"
+                          "value" : "displayKey"
                         },
                         "returnedKey" : {
                           "type" : "constant",
@@ -342,27 +276,23 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -370,48 +300,37 @@
                           "type" : "interpolation",
                           "value" : "Language Interviewer"
                         },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "interpolation"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "languageInterviewers.value"
                         },
-                        "dimension" : {
+                        "displayedKey" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "displayKey"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "id"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.selectedInterviewers.languageInterviewerId"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "5e42f650-f73d-4c8b-9f13-9153ed6addaf",
+                      "reference" : "5c527e2d-cdb2-4e80-9d2d-56d7ff2c880c",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
@@ -627,50 +546,26 @@
       ],
       "exposed" : false
     },
-    "hrAssistantsGroup" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/hrDepartmentGroupId"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
-    },
-    "memberRole" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/memberRoleId"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
-    },
-    "hrAssistants" : {
-      "type" : "url",
-      "value" : [
-        "../API/identity/user?p=0&c=100&f=group_id={{hrAssistantsGroup.value}}&f=role_id={{memberRole.value}}"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
-    },
-    "itDepartmentGroup" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/itDepartmentGroupId"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
-    },
-    "seniorMemberRole" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/seniorMemberRoleId"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
-    },
     "seniorEngineers" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&f=group_id={{itDepartmentGroup.value}}&f=role_id={{seniorMemberRole.value}}"
+        "../API/bpm/activityVariable/{{taskId}}/seniorEngineers"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "hrAssistantsList" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/activityVariable/{{taskId}}/hrAssistants"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "languageInterviewers" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/activityVariable/{{taskId}}/languageInterviewers"
       ],
       "advancedOptions" : { },
       "exposed" : false

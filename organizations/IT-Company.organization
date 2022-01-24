@@ -2,7 +2,7 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT-Company">
   <customUserInfoDefinitions>
     <customUserInfoDefinition>
-      <name>Langugage</name>
+      <name>Language</name>
       <description></description>
     </customUserInfoDefinition>
   </customUserInfoDefinitions>
@@ -21,7 +21,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -39,8 +39,8 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
-          <value></value>
+          <name>Language</name>
+          <value>English</value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
@@ -57,8 +57,8 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
-          <value></value>
+          <name>Language</name>
+          <value>German</value>
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
@@ -75,7 +75,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value>English</value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -93,7 +93,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -111,7 +111,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -127,7 +127,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -145,7 +145,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -163,7 +163,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -181,7 +181,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -199,7 +199,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -217,7 +217,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>
@@ -228,7 +228,7 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
-          <name>Langugage</name>
+          <name>Language</name>
           <value></value>
         </customUserInfoValue>
       </customUserInfoValues>

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "pickJobInterviewDateForm",
   "name" : "pickJobInterviewDateForm",
-  "lastUpdate" : 1642673392415,
+  "lastUpdate" : 1643024391354,
   "rows" : [
     [
       {
@@ -10,100 +10,25 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
         "reference" : "e1179baa-00c6-4e4e-85d5-6242939ad3de",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "276f43c1-bdfa-42b7-af79-919427080951",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "7e99e2a3-c229-48a2-8ad1-04217a7fb37b",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
+          [ ]
         ]
       }
     ],
@@ -232,10 +157,8 @@
                     "value" : false
                   },
                   "availableValues" : {
-                    "type" : "constant",
-                    "value" : [
-                      "potentialDates.value"
-                    ]
+                    "type" : "expression",
+                    "value" : "potentialDates.value"
                   },
                   "displayedKey" : {
                     "type" : "constant",
@@ -466,7 +389,7 @@
     "potentialDates" : {
       "type" : "url",
       "value" : [
-        "../API/bpm/activityVariable/{{taskId}}/potentialInterviewDatesLocalVar"
+        "../API/bpm/activityVariable/{{taskId}}/potentialInterviewDatesLV"
       ],
       "advancedOptions" : { },
       "exposed" : false
